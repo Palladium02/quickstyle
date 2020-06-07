@@ -1,0 +1,17 @@
+.qs {
+    &.statistic {
+        position: relative;
+        max-width: auto;
+        height: auto;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .value {
+            font-size: 28pt;
+        }
+        .label {
+            font-size: 14pt;
+        }
+    }
+}
