@@ -1,0 +1,53 @@
+.m {
+
+    // margin horizontal
+    &x {
+        $mx-values: 4 8 12 16 24 32;
+
+        @each $value in $mx-values {
+            &-#{$value} {
+                margin-left: #{$value}px;
+                margin-right: #{$value}px;
+            }
+        }
+    }
+
+    // margin vertical
+    &y {
+        $my-values: 4 8 12 16 24 32;
+
+        @each $value in $my-values {
+            &-#{$value} {
+                margin-top: #{$value}px;
+                margin-bottom: #{$value}px;
+            }
+        }
+    }
+}
+
+.p {
+
+    // padding horizontal
+    &x {
+        $px-values: 4 8 12 16 24 32;
+
+        @each $value in $px-values {
+            &-#{$value} {
+                padding-left: #{$value}px;
+                padding-right: #{$value}px;
+            }
+        }
+    }
+
+    // padding vertical
+    &y {
+        $py-values: 4 8 12 16 24 32;
+
+        @each $value in $py-values {
+            &-#{$value} {
+                padding-top: #{$value}px;
+                padding-bottom: #{$value}px;
+            }
+        }
+    }
+}

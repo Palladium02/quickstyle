@@ -1,0 +1,151 @@
+// color classes
+$green: ("base": #4CAF50,
+    "green-lighten-5": #E8F5E9,
+    "green-lighten-4": #C8E6C9,
+    "green-lighten-3": #A5D6A7,
+    "green-lighten-2": #81C784,
+    "green-lighten-1": #66BB6A,
+    "green-darken-1": #43A047,
+    "green-darken-2": #388E3C,
+    "green-darken-3": #2E7D32,
+    "green-darken-4": #1B5E20,
+    "green-accent-1": #B9F6CA,
+    "green-accent-2": #69F0AE,
+    "green-accent-3": #00E676,
+    "green-accent-4": #00C853);
+
+$blue: ("base": #2196F3,
+    "blue-lighten-5": #E3F2FD,
+    "blue-lighten-4": #BBDEFB,
+    "blue-lighten-3": #90CAF9,
+    "blue-lighten-2": #64B5F6,
+    "blue-lighten-1": #42A5F5,
+    "blue-darken-1": #1E88E5,
+    "blue-darken-2": #1976D2,
+    "blue-darken-3": #1565C0,
+    "blue-darken-4": #0D47A1,
+    "blue-accent-1": #82B1FF,
+    "blue-accent-2": #448AFF,
+    "blue-accent-3": #2979FF,
+    "blue-accent-4": #2962FF);
+
+$red: ("base": #F44336,
+    "red-lighten-5": #FFEBEE,
+    "red-lighten-4": #FFCDD2,
+    "red-lighten-3": #EF9A9A,
+    "red-lighten-2": #E57373,
+    "red-lighten-1": #EF5350,
+    "red-darken-1": #E53935,
+    "red-darken-2": #D32F2F,
+    "red-darken-3": #C62828,
+    "red-darken-4": #B71C1C,
+    "red-accent-1": #FF8A80,
+    "red-accent-2": #FF5252,
+    "red-accent-3": #FF1744,
+    "red-accent-4": #D50000);
+
+$yellow: ("base": #ffeb3b,
+    "yellow-lighten-5": #fffde7,
+    "yellow-lighten-4": #fff9c4,
+    "yellow-lighten-3": #fff59d,
+    "yellow-lighten-2": #fff176,
+    "yellow-lighten-1": #ffee58,
+    "yellow-darken-1": #fdd835,
+    "yellow-darken-2": #fbc02d,
+    "yellow-darken-3": #f9a825,
+    "yellow-darken-4": #f57f17,
+    "yellow-accent-1": #ffff8d,
+    "yellow-accent-2": #ffff00,
+    "yellow-accent-3": #ffea00,
+    "yellow-accent-4": #ffd600);
+
+$colors: $green $red $blue $yellow;
+$index: 0;
+$color_names: ("green", "red", "blue", "yellow");
+
+.bg {
+    @each $color in $colors {
+
+        @each $name,
+        $hex in $color {
+            @if $name=="base" {
+                @if $index==0 {
+                    &-green {
+                        background-color: $hex;
+                    }
+                }
+
+                @else if $index==1 {
+                    &-red {
+                        background-color: $hex;
+                    }
+                }
+
+                @else if $index==2 {
+                    &-blue {
+                        background-color: $hex;
+                    }
+                }
+
+                @else {
+                    &-yellow {
+                        background-color: $hex;
+                    }
+                }
+            }
+
+            @else {
+                &-#{$name} {
+                    background-color: $hex;
+                }
+            }
+        }
+
+        $index: $index+1;
+    }
+$index: 0;
+
+}
+
+.color {
+    @each $color in $colors {
+
+        @each $name,
+        $hex in $color {
+            @if $name=="base" {
+                @if $index==0 {
+                    &-green {
+                        color: $hex;
+                    }
+                }
+
+                @else if $index==1 {
+                    &-red {
+                        color: $hex;
+                    }
+                }
+
+                @else if $index==2 {
+                    &-red {
+                        color: $hex;
+                    }
+                }
+
+                @else {
+                    &-yellow {
+                        color: $hex;
+                    }
+                }
+            }
+
+            @else {
+                &-#{$name} {
+                    color: $hex;
+                }
+            }
+        }
+
+        $index: $index+1;
+    }
+$index: 0;
+}

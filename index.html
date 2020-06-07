@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchensink</title>
+    <link rel="stylesheet" href="./lib/quickstyle.css">
+</head>
+<body style="width: 100vw; height: auto; box-sizing: border-box; font-family: Source Sans Pro; overflow-y: scroll; overflow-x: hidden; background: linear-gradient(top,#4387fd,#4683ea);">
+    <!-- <div style="width: 200px; height: auto;">
+        <div class="input-group">
+            <input type="text" placeholder="Username"/>
+            <div class="underline">
+                <div class="bg-red-lighten"></div>
+            </div>
+        </div>
+    </div> -->
+    <div style="display: grid; grid-template-columns: 1fr 1fr;">
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16 my-4">Width</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>.w-25</td>
+                    <td>width: 25%</td>
+                </tr>
+                <tr class="">
+                    <td>.w-50</td>
+                    <td>width: 25%</td>
+                </tr>
+                <tr class="">
+                    <td>.w-75</td>
+                    <td>width: 75%</td>
+                </tr>
+                <tr class="">
+                    <td>.w-100</td>
+                    <td>width: 100%</td>
+                </tr>
+                <tr class="">
+                    <td>.w-screen</td>
+                    <td>width: 100vw</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Height</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>.h-25</td>
+                    <td>height: 25%</td>
+                </tr>
+                <tr class="">
+                    <td>.h-50</td>
+                    <td>height: 25%</td>
+                </tr>
+                <tr class="">
+                    <td>.h-75</td>
+                    <td>height: 75%</td>
+                </tr>
+                <tr class="">
+                    <td>.h-100</td>
+                    <td>height: 100%</td>
+                </tr>
+                <tr class="">
+                    <td>.h-screen</td>
+                    <td>height: 100vw</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Margin horizontal</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>.mx-4</td>
+                    <td>4px</td>
+                </tr>
+                <tr class="">
+                    <td>.mx-8</td>
+                    <td>8px</td>
+                </tr>
+                <tr class="">
+                    <td>.mx-12</td>
+                    <td>12px</td>
+                </tr>
+                <tr class="">
+                    <td>.mx-16</td>
+                    <td>16px</td>
+                </tr>
+                <tr class="">
+                    <td>.mx-24</td>
+                    <td>24px</td>
+                </tr>
+                <tr class="">
+                    <td>.mx-32</td>
+                    <td>32px</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Margin vertical</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>.my-4</td>
+                    <td>4px</td>
+                </tr>
+                <tr class="">
+                    <td>.my-8</td>
+                    <td>8px</td>
+                </tr>
+                <tr class="">
+                    <td>.my-12</td>
+                    <td>12px</td>
+                </tr>
+                <tr class="">
+                    <td>.my-16</td>
+                    <td>16px</td>
+                </tr>
+                <tr class="">
+                    <td>.my-24</td>
+                    <td>24px</td>
+                </tr>
+                <tr class="">
+                    <td>.my-32</td>
+                    <td>32px</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Padding horizontal</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>.px-4</td>
+                    <td>4px</td>
+                </tr>
+                <tr class="">
+                    <td>.px-8</td>
+                    <td>8px</td>
+                </tr>
+                <tr class="">
+                    <td>.px-12</td>
+                    <td>12px</td>
+                </tr>
+                <tr class="">
+                    <td>.px-16</td>
+                    <td>16px</td>
+                </tr>
+                <tr class="">
+                    <td>.px-24</td>
+                    <td>24px</td>
+                </tr>
+                <tr class="">
+                    <td>.px-32</td>
+                    <td>32px</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Padding vertical</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>.py-4</td>
+                    <td>4px</td>
+                </tr>
+                <tr class="">
+                    <td>.py-8</td>
+                    <td>8px</td>
+                </tr>
+                <tr class="">
+                    <td>.py-12</td>
+                    <td>12px</td>
+                </tr>
+                <tr class="">
+                    <td>.py-16</td>
+                    <td>16px</td>
+                </tr>
+                <tr class="">
+                    <td>.py-24</td>
+                    <td>24px</td>
+                </tr>
+                <tr class="">
+                    <td>.py-32</td>
+                    <td>32px</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Color green</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>bg-green</td>
+                    <td class="bg-green"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-lighten-1</td>
+                    <td class="bg-green-lighten-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-lighten-2</td>
+                    <td class="bg-green-lighten-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-lighten-3</td>
+                    <td class="bg-green-lighten-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-lighten-4</td>
+                    <td class="bg-green-lighten-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-lighten-5</td>
+                    <td class="bg-green-lighten-5"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-darken-1</td>
+                    <td class="bg-green-darken-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-darken-2</td>
+                    <td class="bg-green-darken-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-darken-3</td>
+                    <td class="bg-green-darken-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-darken-4</td>
+                    <td class="bg-green-darken-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-accent-1</td>
+                    <td class="bg-green-accent-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-accent-2</td>
+                    <td class="bg-green-accent-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-accent-3</td>
+                    <td class="bg-green-accent-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-green-accent-4</td>
+                    <td class="bg-green-accent-4"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Color blue</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>bg-blue</td>
+                    <td class="bg-blue"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-lighten-1</td>
+                    <td class="bg-blue-lighten-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-lighten-2</td>
+                    <td class="bg-blue-lighten-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-lighten-3</td>
+                    <td class="bg-blue-lighten-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-lighten-4</td>
+                    <td class="bg-blue-lighten-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-lighten-5</td>
+                    <td class="bg-blue-lighten-5"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-darken-1</td>
+                    <td class="bg-blue-darken-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-darken-2</td>
+                    <td class="bg-blue-darken-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-darken-3</td>
+                    <td class="bg-blue-darken-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-darken-4</td>
+                    <td class="bg-blue-darken-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-accent-1</td>
+                    <td class="bg-blue-accent-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-accent-2</td>
+                    <td class="bg-blue-accent-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-accent-3</td>
+                    <td class="bg-blue-accent-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-blue-accent-4</td>
+                    <td class="bg-blue-accent-4"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Color yellow</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>bg-yellow</td>
+                    <td class="bg-yellow"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-lighten-1</td>
+                    <td class="bg-yellow-lighten-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-lighten-2</td>
+                    <td class="bg-yellow-lighten-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-lighten-3</td>
+                    <td class="bg-yellow-lighten-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-lighten-4</td>
+                    <td class="bg-yellow-lighten-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-lighten-5</td>
+                    <td class="bg-yellow-lighten-5"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-darken-1</td>
+                    <td class="bg-yellow-darken-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-darken-2</td>
+                    <td class="bg-yellow-darken-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-darken-3</td>
+                    <td class="bg-yellow-darken-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-darken-4</td>
+                    <td class="bg-yellow-darken-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-accent-1</td>
+                    <td class="bg-yellow-accent-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-accent-2</td>
+                    <td class="bg-yellow-accent-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-accent-3</td>
+                    <td class="bg-yellow-accent-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-yellow-accent-4</td>
+                    <td class="bg-yellow-accent-4"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        </div>
+        <div class="w-1/2 my-4">
+            <h2 class="mx-16">Color red</h2>
+        <table class="qs table w-1 mx-16 my-8" id="example-table">
+            <thead>
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="">
+                    <td>bg-red</td>
+                    <td class="bg-red"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-lighten-1</td>
+                    <td class="bg-red-lighten-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-lighten-2</td>
+                    <td class="bg-red-lighten-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-lighten-3</td>
+                    <td class="bg-red-lighten-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-lighten-4</td>
+                    <td class="bg-red-lighten-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-lighten-5</td>
+                    <td class="bg-red-lighten-5"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-darken-1</td>
+                    <td class="bg-red-darken-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-darken-2</td>
+                    <td class="bg-red-darken-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-darken-3</td>
+                    <td class="bg-red-darken-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-darken-4</td>
+                    <td class="bg-red-darken-4"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-accent-1</td>
+                    <td class="bg-red-accent-1"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-accent-2</td>
+                    <td class="bg-red-accent-2"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-accent-3</td>
+                    <td class="bg-red-accent-3"></td>
+                </tr>
+                <tr class="">
+                    <td>bg-red-accent-4</td>
+                    <td class="bg-red-accent-4"></td>
+                </tr>
+                
+            </tbody>
+        </table>
+        Same naming applies for text colors, color-* then the colorname
+        </div>
+    </div>
+    <div class="w-full px-12 py-12" style="height: auto;">
+        <h2 class="text-800 color-onyx mx-16">Text styles</h2>
+        <div style="width: 200px; height: auto;" class="mx-16">
+            <div class="qs input-group">
+                <input type="text" placeholder="Username"/>
+                <div class="underline">
+                    <div class="bg-blue-lighten-2"></div>
+                </div>
+            </div>
+        </div>
+        <h2 class="text-24 mx-16 color-red-accent-1">Button</h2>
+        <button class="bg-red-lighten-1 color-red-lighten-5 rounded-md border-none px-8 py-4 mx-16 my-8 w-1/4">Click me!</button>
+    </div>
+</body>
+</html>

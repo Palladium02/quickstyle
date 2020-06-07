@@ -1,0 +1,47 @@
+// Sizing
+
+// width
+.w {
+    &-1\/4 {
+        width: 25%;
+    }
+
+    &-1\/2 {
+        width: 50%;
+    }
+
+    &-3\/4 {
+        width: 75%;
+    }
+
+    &-1 {
+        width: 100%;
+    }
+
+    &-screen {
+        width: 100vw;
+    }
+}
+
+// height
+.h {
+    &-1\/4 {
+        height: 25%;
+    }
+
+    &-1\/2 {
+        height: 50%;
+    }
+
+    &-3\/4 {
+        height: 75%;
+    }
+
+    &-1 {
+        height: 100%;
+    }
+
+    &-screen {
+        height: 100vh;
+    }
+}

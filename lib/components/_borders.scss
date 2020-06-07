@@ -1,0 +1,109 @@
+// border
+.border {
+    &-none {
+        border: none;
+    }
+
+    &-solid {
+        border: solid;
+    }
+}
+
+// border radius
+.rounded {
+    border-radius: 0.25rem;
+
+    &-sm {
+        border-radius: 0.125rem;
+
+        &-t {
+            border-top-left-radius: 0.125rem;
+            border-top-right-radius: 0.125rem;
+
+            &l {
+                border-top-left-radius: 0.125rem;
+            }
+
+            &r {
+                border-top-right-radius: 0.125rem;
+            }
+        }
+
+        &-b {
+            border-bottom-left-radius: 0.125rem;
+            border-bottom-right-radius: 0.125rem;
+
+            &l {
+                border-bottom-left-radius: 0.125rem;
+            }
+
+            &r {
+                border-bottom-right-radius: 0.125rem;
+            }
+        }
+    }
+
+    &-md {
+        border-radius: 0.375rem;
+
+        &-t {
+            border-top-left-radius: 0.375rem;
+            border-top-right-radius: 0.375rem;
+
+            &l {
+                border-top-left-radius: 0.375rem;
+            }
+
+            &r {
+                border-top-right-radius: 0.375rem;
+            }
+        }
+
+        &-b {
+            border-bottom-left-radius: 0.375rem;
+            border-bottom-right-radius: 0.375rem;
+
+            &l {
+                border-bottom-left-radius: 0.375rem;
+            }
+
+            &r {
+                border-bottom-right-radius: 0.375rem;
+            }
+        }
+    }
+
+    &-lg {
+        border-radius: 0.5rem;
+
+        &-t {
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+
+            &l {
+                border-top-left-radius: 0.5rem;
+            }
+
+            &r {
+                border-top-right-radius: 0.5rem;
+            }
+        }
+
+        &-b {
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+
+            &l {
+                border-bottom-left-radius: 0.5rem;
+            }
+
+            &r {
+                border-bottom-right-radius: 0.5rem;
+            }
+        }
+    }
+
+    &-full {
+        border-radius: 50%;
+    }
+}
