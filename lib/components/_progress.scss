@@ -1,0 +1,25 @@
+.qs {
+    &.progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: lightgrey;
+        width: 100vw;
+        height: 2px;
+        div {
+            height: 2px;
+            animation-name: loader;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+
+@keyframes loader {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

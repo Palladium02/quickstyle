@@ -1,10 +1,20 @@
 .qs {
     &.floating-input {
+        transition: all ease-in-out .5s;
+        border: solid 1px lightgrey;
+        &.menu {
+            box-shadow: none;
+            width: 400px!important;
+            right: 50px;
+            transition-delay: .3s;
+            border: solid 1px rgb(184, 182, 182);
+        }
+        z-index: 9999;
         &.top {
             position: fixed;
             top: 32px;
-            left: 10%;
-            width: 80%;
+            right: 5%;
+            width: 90%;
             height: 2.5rem;
             border-radius: .2rem;
             background-color: #FFF;

@@ -1,0 +1,26 @@
+button.qs {
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    outline: none;
+    // &.ripple {
+    //     background-position: center;
+    //     transition: background 2s;
+    //     &:hover {
+    //         background: inherit radial-gradient(circle, transparent 1%, inherit 1%) center/15000%;
+    //     }
+    //     &:active {
+    //         background-color: rgba(255, 255, 255, 0.4);
+    //         background-size: 100%;
+    //         transition: background 2s;
+    //     }
+    // }
+    // &.ripple:active {
+    //     background-color: rgba(255, 255, 255, 0.4);
+    //     background-size: 100%;
+    //     -webkit-transition: background 0s;
+    //     transition: background 0s;
+    // }
+}

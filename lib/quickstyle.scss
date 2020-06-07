@@ -6,6 +6,10 @@
 @import 'components/_inputs';
 @import 'components/_statistics';
 @import 'components/_tags';
+@import 'components/_buttons';
+@import 'components/_sidemenu';
+@import 'components/_grid';
+@import 'components/_progress';
 
 // text-weight-size
 .text {
@@ -121,6 +125,18 @@
         }
 
     }
+}
 
-    
+.grid-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(67, 81, 202, 0.6);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    div {
+        border-right: solid 16px rgba(67, 81, 202, 0.4);
+    }
 }
