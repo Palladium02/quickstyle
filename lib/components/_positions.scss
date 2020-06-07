@@ -1,0 +1,8 @@
+$positions: "top" "right" "bottom" "left";
+$modes: "fixed" "sticky" "relative" "absolute" "static";
+
+@each $mode in $modes {
+    .#{$mode} {
+        position: #{$mode};
+    }
+}

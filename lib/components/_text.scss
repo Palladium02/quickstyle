@@ -1,0 +1,17 @@
+// text-weight-size
+.text {
+    $weights: 100 200 300 400 500 600 700 800 900;
+    $sizes: 42 34 28 22 20 14 12;
+
+    @each $weight in $weights {
+        &-#{$weight} {
+            font-weight: $weight;
+        }
+    }
+
+    @each $size in $sizes {
+        &-#{$size} {
+            font-size: #{$size}pt;
+        }
+    }
+}

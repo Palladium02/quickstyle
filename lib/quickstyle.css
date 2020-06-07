@@ -1730,7 +1730,7 @@ button.qs {
   background-color: rgba(67, 81, 202, 0.6);
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[12];
+  /* -ms-grid-columns: (1fr)[12]; */
       grid-template-columns: repeat(12, 1fr);
 }
 
