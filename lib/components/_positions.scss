@@ -1,8 +1,19 @@
 $positions: "top" "right" "bottom" "left";
 $modes: "fixed" "sticky" "relative" "absolute" "static";
+$values: "0" "4" "8" "16" "32" "48";
 
 @each $mode in $modes {
     .#{$mode} {
         position: #{$mode};
+    }
+}
+
+@each $position in $positions {
+    .#{$position}- {
+        @each $value in $values {
+            &#{$value} {
+                #{$position}: #{$value}px;
+            }
+        }
     }
 }

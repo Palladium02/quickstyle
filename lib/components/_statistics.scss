@@ -3,7 +3,11 @@
         position: relative;
         max-width: auto;
         height: auto;
-        @include inline-flex-center-column;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // @include inline-flex-center-column;
         .value {
             font-size: 28pt;
         }
