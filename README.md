@@ -6,3 +6,9 @@ As my CS teacher said:
 
 The purpose of Quickstyle.css is to improve what didn't work in
 PaperDesign and extend the functionality.
+
+## Table of contents
+
+* [Usage](#howto)
+
+## howto

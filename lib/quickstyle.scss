@@ -27,6 +27,7 @@
     background-color: rgba(67, 81, 202, 0.6);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    z-index: 10000;
     div {
         border-right: solid 16px rgba(67, 81, 202, 0.4);
     }
