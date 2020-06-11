@@ -772,7 +772,8 @@ button.qs {
   -webkit-box-shadow: none;
           box-shadow: none;
   width: 400px !important;
-  right: 50px;
+  right: 50px !important;
+  left: calc(100vw - 450px) !important;
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
   border: solid 1px #b8b6b6;
@@ -782,6 +783,7 @@ button.qs {
   position: fixed;
   top: 32px;
   right: 5%;
+  left: 5%;
   width: 90%;
   height: 2.5rem;
   border-radius: .2rem;
